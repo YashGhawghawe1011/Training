@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-5">
+            <app-edit-book></app-edit-book>
+        </div>
+        <hr>
+        <div class="col-md-7">
+            <button type="button" class="btn btn-primary btn-md btn-block" (click)="showBooks()">Show Books</button>
+            <ul class="list-group" *ngIf="bok">
+                <p style="color: rgba(42, 42, 238, 0.842)">Following Are The books Assigned On Your Name</p>
+                <table class="table table-dark table-stripped table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col">Book Name</th>
+                            <th scope="col">Author Name</th>
+                            <th scope="col">Quantity</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let book of books | async">
+                            <td>{{book.name}}</td>
+                            <td>{{book.author}}</td>
+                            <td>{{book.quantity}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </ul>
+            <hr />
+            <button type="button" class="btn btn-danger btn-md btn-block" (click)="deleteBooks()">Delete Books</button>
+        </div>
+    </div>
+</div>

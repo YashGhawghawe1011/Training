@@ -1,0 +1,37 @@
+<div class="container" class="margintop">
+    <nav class="navbar navbar-expand-lg  navbar-dark bg-primary rounded">
+        <a class="navbar-brand">Apex Library</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">Menu
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" style="align-content: center">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item" routerLinkActive="active">
+                    <a class="nav-link" routerLink="/home">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item" routerLinkActive="active">
+                    <a class="nav-link" routerLink="/Addbook">Add Book</a>
+                </li>
+                <li class="nav-item" routerLinkActive="active">
+                    <a class="nav-link" routerLink="/ViewAll" tabindex="-1" aria-disabled="true">View Gallery</a>
+                </li>
+                <li class="nav-item" routerLinkActive="active">
+                    <a class="nav-link" routerLink="/librarian" tabindex="-1" aria-disabled="true">Librarian</a>
+                </li>
+            </ul>
+            <div class="btn-group">
+                <button type="button" class="btn btn-dark">Action</button>
+                <button type="button" class="btn btn-dark dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" style="cursor: pointer;" routerLink="/login">Login</a>
+                  <a class="dropdown-item"style="cursor: pointer;" routerLink="/register">SignUp</a>
+                  <a class="dropdown-item" style="cursor: pointer;" routerLink="" (click)="logout()">Logout</a>
+                </div>
+              </div>
+        </div>
+    </nav>
+</div>

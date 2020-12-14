@@ -1,0 +1,21 @@
+.text-danger{
+    background-color:black;
+    color: gold;
+}
+
+.text-success{
+    background-color:green;
+    color: gold;
+}
+
+input.ng-valid{
+    border: 1px palegreen;
+}
+
+input.ng-invalid{
+    border: 1px red;
+}
+
+.form-container{
+    width: 60%;;
+}

@@ -1,0 +1,21 @@
+<div class="container">
+    <h3 style="color: rgb(57, 57, 243);">Following are the Registered Users</h3>
+    <table class="table table-dark table-stripped table-hover">
+        <thead>
+            <tr>
+                <th scope="col">First Name</th>
+                <th scope="col">Last Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">City</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let user of users">
+                <td>{{user.firstName}}</td>
+                <td>{{user.lastName}}</td>
+                <td>{{user.email}}</td>
+                <td>{{user.city}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
